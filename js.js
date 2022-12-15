@@ -158,6 +158,10 @@ $addForm.addEventListener("submit", function (event) {
     alert("Фамилия не введена!");
     return;
   }
+  if ($ageInp.value.trim() == "") {
+    alert("Возраст не введен!");
+    return;
+  }
 
   listData.push({
     name: $nameInp.value.trim(),
